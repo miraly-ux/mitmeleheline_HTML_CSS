@@ -16,6 +16,13 @@ a {
 h1 {
     padding-bottom: 20px;
 }
+.container {
+    margin: auto;
+    max-width: 1100px;
+    padding: 0 20px;
+    overflow: auto;
+}
+
 /* navbar */
 #navbar {
     background: #555;
@@ -30,5 +37,19 @@ h1 {
     list-style: none;
 }
 #navbar ul li {
+    float: left;
+}
+#navbar ul li a {
+    display: block;
+    padding: 20px;
+    text-align: center;
+}
+#navbar ul li a:hover,
+#navbar ul li a.current {
+    background: #444;
+    color: #f7c08a;
+}
+#navbar h1 {
+    padding-top: 20px;
     float: left;
 }
